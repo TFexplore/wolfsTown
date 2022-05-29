@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_master"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.example.wolfstown.ui.community.MasterFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_master" />
+    <fragment
+        android:id="@+id/fragmentDetails"
+        android:name="com.example.wolfstown.ui.community.detail.DetailsFragment"
+        android:label="fragment_details">
+        <action
+            android:id="@+id/action_fragmentDetails_to_tableFragment"
+            app:destination="@id/tableFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tableFragment"
+        android:name="com.example.wolfstown.ui.community.listPager.ListFragment"
+        android:label="fragment_table">
+        <action
+            android:id="@+id/action_tableFragment_to_fragmentDetails"
+            app:destination="@id/fragmentDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.example.wolfstown.ui.community.edit.EditFragment"
+        android:label="fragment_edit" />
+</navigation>
