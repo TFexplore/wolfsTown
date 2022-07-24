@@ -31,7 +31,7 @@ public class GridViewAdapter extends BaseAdapter {
  
 	@Override
 	public int getCount() {
-		return list.size()+1;//注意此处
+		return list.size();
 	}
  
 	@Override
@@ -52,16 +52,13 @@ public class GridViewAdapter extends BaseAdapter {
 		}
 
 		mImageView = (ImageView) convertView.findViewById(R.id.item);
-		if (position < list.size()) {
 			Glide.with(Utils.getApp().getApplicationContext()).load(list.get(position))
 					.error(R.mipmap.ic_launcher)
 					.placeholder(R.mipmap.app)
 					.dontAnimate()
 					.into(mImageView);
 			Log.d(TAG, "getView: ---------------");
-		}else{
-			mImageView.setBackgroundResource(R.drawable.add_img);//最后一个显示加号图片
-		}
+
 
 		return convertView;
 	}

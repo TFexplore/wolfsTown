@@ -1,6 +1,7 @@
 package com.example.wolfstown.ui.community.listPager;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
@@ -19,6 +21,7 @@ import com.example.wolfstown.R;
 import com.example.wolfstown.common.Utils;
 import com.example.wolfstown.databinding.ListItemCardBinding;
 import com.example.wolfstown.modle.Topic;
+import com.wanglu.photoviewerlibrary.OnLongClickListener;
 import com.wanglu.photoviewerlibrary.PhotoViewer;
 
 import java.text.SimpleDateFormat;
@@ -30,10 +33,14 @@ public class MyListAdapter extends RecyclerView.Adapter<MyListAdapter.MyViewHold
     Context context;
     List<Topic> strList;
 
-
+    private Activity fragment;
     public MyListAdapter(Context context, List<Topic> strList){
         this.context = context;
         this.strList = strList;
+    }
+
+    public void setFragment(Activity fragment) {
+        this.fragment = fragment;
     }
 
     @NonNull
@@ -70,13 +77,39 @@ public class MyListAdapter extends RecyclerView.Adapter<MyListAdapter.MyViewHold
         holder.tv_name.setText(strList.get(position).getName());
         holder.tv_time.setText(Utils.millis2String(strList.get(position).getTime(),new SimpleDateFormat("h:mm a")));
         holder.tv_like.setText(""+strList.get(position).getLikeNum());
-        Glide.with(Utils.getApp().getApplicationContext()).load("https://dss0.bdstatic.com/6Ox1bjeh1BF3odCf/it/u=572734183,263400261&fm=74&app=80&f=JPEG?w=200&h=200")
+        Glide.with(Utils.getApp().getApplicationContext()).load("https://img.zcool.cn/community/01dafd58ec38dea8012049efb3b0d5.png@1280w_1l_2o_100sh.png")
                 .into(holder.im_picture);;
                 holder.tv_content.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         NavController controller= Navigation.findNavController(v);
                         controller.navigate(R.id.fragmentDetails);
+                    }
+                });
+                holder.im_picture.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        PhotoViewer.INSTANCE
+
+                                //设置图片数据
+                                .setClickSingleImg("https://img.zcool.cn/community/01dafd58ec38dea8012049efb3b0d5.png@1280w_1l_2o_100sh.png",v)
+                                //设置当前位置
+                                .setCurrentPage(position)
+                                //设置图片加载回调
+                                .setShowImageViewInterface((imageView, url) -> {
+                                    //使用Glide显示图片
+                                    Glide.with(Utils.getApp())
+                                            .load(url)
+                                            .into(imageView);
+                                })
+                                .setOnLongClickListener(new OnLongClickListener() {
+                                    @Override
+                                    public void onLongClick(@NonNull View view) {
+
+                                    }
+                                })
+                                //启动界面
+                                .start((AppCompatActivity) fragment);
                     }
                 });
 

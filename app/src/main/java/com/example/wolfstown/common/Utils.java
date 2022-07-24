@@ -7,6 +7,8 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 
+import com.google.gson.Gson;
+
 import java.lang.ref.WeakReference;
 import java.text.DateFormat;
 import java.util.Date;
@@ -19,8 +21,18 @@ public final class Utils {
     @SuppressLint("StaticFieldLeak")
     private static Application sApplication;
 
+    private static Gson gson;
+
     static WeakReference<Activity> sTopActivityWeakRef;
     static List<Activity> sActivityList = new LinkedList<>();
+
+
+    public static Gson getGson() {
+        if (gson==null){
+            gson=new Gson();
+        }
+        return gson;
+    }
 
     private static Application.ActivityLifecycleCallbacks mCallbacks = new Application.ActivityLifecycleCallbacks() {
         @Override

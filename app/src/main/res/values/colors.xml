@@ -8,6 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="login_top">#FFFFFF</color>
+    <color name="top_cell">#2196f3</color>
+
+    <color name="bar_main">#4dabf7</color>
 
     <color name="color_f6">#f6f6f6</color>
 

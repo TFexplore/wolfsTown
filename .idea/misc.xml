@@ -20,17 +20,40 @@
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/drawable/table_selector.xml" value="0.258" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/drawable/top_boder.xml" value="0.172" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/community/drawable/detail_sub_shape.xml" value="0.1505" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/community/drawable/item_content_img__shape.xml" value="0.105" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/community/drawable/radius_shape_top.xml" value="0.105" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/community/drawable/selector_push.xml" value="0.1545" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/community/drawable/top_boder.xml" value="0.105" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/community/layout/comment_dialog.xml" value="0.264" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/community/layout/detail_grid_item.xml" value="0.17889492753623187" />
-        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/community/layout/detail_item_comment.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/community/layout/detail_item_comment.xml" value="0.4" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/community/layout/edit_imag_item.xml" value="0.18931159420289856" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/community/layout/fragment_details.xml" value="0.264" />
-        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/community/layout/fragment_edit.xml" value="0.264" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/community/layout/fragment_edit.xml" value="0.176" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/community/layout/fragment_list.xml" value="0.18931159420289856" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/community/layout/item_card.xml" value="0.17889492753623187" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/community/layout/list_item_card.xml" value="0.4" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/content_main.xml" value="0.22826086956521738" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/fragment_first.xml" value="0.22826086956521738" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/fragment_second.xml" value="0.22826086956521738" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/game_woveskill/drawable/ic_back_black.xml" value="0.222" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/game_woveskill/drawable/radius_item.xml" value="0.222" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/game_woveskill/drawable/radius_shape.xml" value="0.222" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/game_woveskill/drawable/radius_shape_q.xml" value="0.222" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/game_woveskill/layout/cell_messge.xml" value="0.2" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/game_woveskill/layout/dialog_nv.xml" value="0.1875" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/game_woveskill/layout/dialog_role.xml" value="0.1875" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/game_woveskill/layout/dialog_yyj.xml" value="0.1875" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/game_woveskill/layout/fragment_cell.xml" value="0.264" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/game_woveskill/layout/fragment_configure.xml" value="0.4" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/game_woveskill/layout/fragment_creat.xml" value="0.1875" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/game_woveskill/layout/fragment_enter.xml" value="0.176" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/game_woveskill/layout/item_roles.xml" value="0.1875" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/layout/activity_login.xml" value="0.22826086956521738" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/layout/activity_main.xml" value="0.1875" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/layout/conten_master.xml" value="0.19655797101449277" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/layout/content_detail.xml" value="0.264" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/layout/content_inputbox.xml" value="0.264" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/layout/content_master.xml" value="0.264" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/layout/footer.xml" value="0.23052536231884058" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/layout/fragment_details.xml" value="0.4" />
@@ -47,11 +70,11 @@
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/drawable/table_selector.xml" value="0.1505" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/drawable/tablelayout_radius.xml" value="0.1505" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/layout/activity_main.xml" value="0.22826086956521738" />
-        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/layout/content_master.xml" value="0.17889492753623187" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/layout/content_master.xml" value="0.264" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/layout/footer.xml" value="0.17889492753623187" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/layout/fragment_details.xml" value="0.23052536231884058" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/layout/fragment_first.xml" value="0.264" />
-        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/layout/fragment_master.xml" value="0.17889492753623187" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/layout/fragment_master.xml" value="0.152" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/layout/fragment_second.xml" value="0.22826086956521738" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/layout/fragment_table.xml" value="0.23052536231884058" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/layout/grid_item.xml" value="0.23052536231884058" />
@@ -69,6 +92,30 @@
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/menu/menu_main.xml" value="0.25364583333333335" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/menu/menu_master.xml" value="0.25364583333333335" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/xml/photo_select.xml" value="0.18931159420289856" />
+        <entry key="..\:/AndroidProject/wolfsTown/editPage/src/main/res/drawable/custom_qq_cb.xml" value="0.222" />
+        <entry key="..\:/AndroidProject/wolfsTown/editPage/src/main/res/drawable/message_oval_orange.xml" value="0.222" />
+        <entry key="..\:/AndroidProject/wolfsTown/editPage/src/main/res/drawable/message_oval_white.xml" value="0.222" />
+        <entry key="..\:/AndroidProject/wolfsTown/editPage/src/main/res/drawable/num_oval_orange.xml" value="0.222" />
+        <entry key="..\:/AndroidProject/wolfsTown/editPage/src/main/res/drawable/picture_new_item_select_bg.xml" value="0.222" />
+        <entry key="..\:/AndroidProject/wolfsTown/editPage/src/main/res/drawable/picture_num_oval_blue_def.xml" value="0.222" />
+        <entry key="..\:/AndroidProject/wolfsTown/editPage/src/main/res/drawable/picture_transparent_bg.xml" value="0.222" />
+        <entry key="..\:/AndroidProject/wolfsTown/editPage/src/main/res/drawable/ps_custom_checkbox_selector.xml" value="0.222" />
+        <entry key="..\:/AndroidProject/wolfsTown/editPage/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/AndroidProject/wolfsTown/editPage/src/main/res/layout/gv_filter_image.xml" value="0.18931159420289856" />
+        <entry key="..\:/AndroidProject/wolfsTown/selector/src/main/res/layout/ps_activity_container.xml" value="0.1875" />
+        <entry key="..\:/AndroidProject/wolfsTown/selector/src/main/res/layout/ps_alert_dialog.xml" value="0.1875" />
+        <entry key="..\:/AndroidProject/wolfsTown/selector/src/main/res/layout/ps_audio_play_dialog.xml" value="0.1875" />
+        <entry key="..\:/AndroidProject/wolfsTown/selector/src/main/res/layout/ps_bottom_nav_bar.xml" value="0.1875" />
+        <entry key="..\:/AndroidProject/wolfsTown/selector/src/main/res/layout/ps_common_dialog.xml" value="0.1875" />
+        <entry key="..\:/AndroidProject/wolfsTown/selector/src/main/res/layout/ps_complete_selected_layout.xml" value="0.1875" />
+        <entry key="..\:/AndroidProject/wolfsTown/selector/src/main/res/layout/ps_custom_preview_image.xml" value="0.1875" />
+        <entry key="..\:/AndroidProject/wolfsTown/selector/src/main/res/layout/ps_dialog_camera_selected.xml" value="0.1875" />
+        <entry key="..\:/AndroidProject/wolfsTown/selector/src/main/res/layout/ps_empty.xml" value="0.1875" />
+        <entry key="..\:/AndroidProject/wolfsTown/selector/src/main/res/layout/ps_fragment_preview.xml" value="0.1875" />
+        <entry key="..\:/AndroidProject/wolfsTown/selector/src/main/res/layout/ps_fragment_selector.xml" value="0.1875" />
+        <entry key="..\:/AndroidProject/wolfsTown/selector/src/main/res/layout/ps_item_grid_audio.xml" value="0.1875" />
+        <entry key="..\:/AndroidProject/wolfsTown/selector/src/main/res/layout/ps_item_grid_camera.xml" value="0.1875" />
+        <entry key="..\:/AndroidProject/wolfsTown/selector/src/main/res/layout/ps_item_grid_image.xml" value="0.1875" />
       </map>
     </option>
   </component>

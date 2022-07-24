@@ -120,7 +120,7 @@
                     app:tabPaddingStart="12dp" />
 
                 <ImageView
-                    android:id="@+id/imageView3"
+                    android:id="@+id/im_creat"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="8dp"
@@ -136,12 +136,12 @@
                     android:layout_marginTop="4dp"
                     android:text="创建房间"
                     android:textColor="@color/black"
-                    app:layout_constraintEnd_toEndOf="@+id/imageView3"
-                    app:layout_constraintStart_toStartOf="@+id/imageView3"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+                    app:layout_constraintEnd_toEndOf="@+id/im_creat"
+                    app:layout_constraintStart_toStartOf="@+id/im_creat"
+                    app:layout_constraintTop_toBottomOf="@+id/im_creat" />
 
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/im_mine"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="8dp"
@@ -157,12 +157,12 @@
                     android:layout_marginTop="4dp"
                     android:text="个人中心"
                     android:textColor="@color/black"
-                    app:layout_constraintEnd_toEndOf="@+id/imageView4"
-                    app:layout_constraintStart_toStartOf="@+id/imageView4"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+                    app:layout_constraintEnd_toEndOf="@+id/im_mine"
+                    app:layout_constraintStart_toStartOf="@+id/im_mine"
+                    app:layout_constraintTop_toBottomOf="@+id/im_mine" />
 
                 <ImageView
-                    android:id="@+id/imageView6"
+                    android:id="@+id/im_team"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="8dp"
@@ -202,12 +202,12 @@
                     android:layout_marginTop="4dp"
                     android:text="附近组队"
                     android:textColor="@color/black"
-                    app:layout_constraintEnd_toEndOf="@+id/imageView6"
-                    app:layout_constraintStart_toStartOf="@+id/imageView6"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+                    app:layout_constraintEnd_toEndOf="@+id/im_team"
+                    app:layout_constraintStart_toStartOf="@+id/im_team"
+                    app:layout_constraintTop_toBottomOf="@+id/im_team" />
 
                 <ImageView
-                    android:id="@+id/imageView7"
+                    android:id="@+id/im_enter"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="8dp"
@@ -223,9 +223,9 @@
                     android:layout_marginTop="4dp"
                     android:text="进入房间"
                     android:textColor="@color/black"
-                    app:layout_constraintEnd_toEndOf="@+id/imageView7"
-                    app:layout_constraintStart_toStartOf="@+id/imageView7"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+                    app:layout_constraintEnd_toEndOf="@+id/im_enter"
+                    app:layout_constraintStart_toStartOf="@+id/im_enter"
+                    app:layout_constraintTop_toBottomOf="@+id/im_enter" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -27,14 +27,6 @@ public class ListFragment extends Fragment {
     ) {
         getDate();
         binding = FragmentListBinding.inflate(inflater, container, false);
-        RecyclerView recyclerView;
-        MyListAdapter myListAdapter;
-
-        myListAdapter = new MyListAdapter(requireContext(), strList);
-        recyclerView = binding.recylerViewMaster;
-        recyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
-        recyclerView.setAdapter(myListAdapter);
-        recyclerView.setNestedScrollingEnabled(false);
 
         return binding.getRoot();
 
@@ -53,7 +45,15 @@ public class ListFragment extends Fragment {
     }
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        RecyclerView recyclerView;
+        MyListAdapter myListAdapter;
 
+        myListAdapter = new MyListAdapter(requireContext(), strList);
+        myListAdapter.setFragment(requireActivity());
+        recyclerView = binding.recylerViewMaster;
+        recyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
+        recyclerView.setAdapter(myListAdapter);
+        recyclerView.setNestedScrollingEnabled(false);
     }
 
     @Override

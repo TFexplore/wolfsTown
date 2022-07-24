@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/firstFragment"
-        android:name="com.example.wolfstown.ui.community.MasterFragment"
+        android:name="com.example.wolfstown.ui.MasterFragment"
         android:label="fragment_first"
         tools:layout="@layout/fragment_master" />
     <fragment
@@ -30,4 +30,39 @@
         android:id="@+id/editFragment"
         android:name="com.example.wolfstown.ui.community.edit.EditFragment"
         android:label="fragment_edit" />
+    <fragment
+        android:id="@+id/enterFragment"
+        android:name="com.example.wolfstown.ui.games.EnterFragment"
+        android:label="fragment_enter"
+        tools:layout="@layout/fragment_enter" >
+        <action
+            android:id="@+id/action_enterFragment_to_cellFragment"
+            app:destination="@id/cellFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/creatFragment"
+        android:name="com.example.wolfstown.ui.games.CreatFragment"
+        android:label="fragment_creat"
+        tools:layout="@layout/fragment_creat" />
+    <fragment
+        android:id="@+id/cellFragment"
+        android:name="com.example.wolfstown.ui.games.wolf.CellFragment"
+        android:label="fragment_cell"
+        tools:layout="@layout/fragment_cell" >
+        <action
+            android:id="@+id/action_cellFragment_to_enterFragment"
+            app:destination="@id/enterFragment" />
+        <action
+            android:id="@+id/action_cellFragment_to_configureFragment"
+            app:destination="@id/configureFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/configureFragment"
+        android:name="com.example.wolfstown.ui.games.wolf.ConfigureFragment"
+        android:label="fragment_configure"
+        tools:layout="@layout/fragment_configure" >
+        <action
+            android:id="@+id/action_configureFragment_to_cellFragment"
+            app:destination="@id/cellFragment" />
+    </fragment>
 </navigation>

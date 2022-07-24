@@ -1,3 +1,9 @@
 include ':app'
 rootProject.name = "wolfsTown"
+include ':camerax'
+include ':compress'
 include ':selector'
+include ':ucrop'
+include ':editPage'
+include ':easyhttp'
+include ':base'

@@ -9,4 +9,6 @@ public class Comment {
     Long time;
     List<Comment> list;
 
+    public Comment() {
+    }
 }

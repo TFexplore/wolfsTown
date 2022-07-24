@@ -101,8 +101,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:ems="10"
-            android:hint="邮箱账户"
-            android:inputType="textEmailAddress"
+            android:hint="手机号码"
+            android:inputType="phone"
             android:maxLength="30"
             app:layout_constraintEnd_toStartOf="@+id/guideline5"
             app:layout_constraintStart_toStartOf="@+id/guideline4"
@@ -147,7 +147,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="请使用邮箱账户进行注册绑定"
+            android:text="请使用电话号进行注册绑定"
             app:layout_constraintStart_toStartOf="@+id/guideline4"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
