@@ -92,6 +92,7 @@ import top.zibin.luban.OnRenameListener;
 public class Selector extends BaseSelector {
 
 
+
     public Selector(Context context,RecyclerView recyclerView,List<LocalMedia> mData) {
         super(context,mData);
         this.mRecyclerView=recyclerView;
@@ -314,7 +315,7 @@ public class Selector extends BaseSelector {
                     //.setExtendLoaderEngine(getExtendLoaderEngine())
                     .setInjectLayoutResourceListener(getInjectLayoutResource())
                     //单选SelectModeConfig.SINGLE
-                    .setSelectionMode(SelectModeConfig.MULTIPLE)
+                    .setSelectionMode(selectionMode)
                     .setLanguage(language)
                     .setOutputCameraDir(chooseMode == SelectMimeType.ofAudio()
                             ? getSandboxAudioOutputPath() : getSandboxCameraOutputPath())

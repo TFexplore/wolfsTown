@@ -7,30 +7,18 @@
     android:layout_height="match_parent"
     tools:context=".ui.MasterFragment">
 
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/navigationView"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        app:insetForeground="@android:color/transparent"
-        app:menu="@menu/menu_master" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <view
+        <TextView
             android:id="@+id/top_view"
-            class="androidx.constraintlayout.widget.Group"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="50dp"
             android:background="#2196f3"
-            app:layout_constraintBottom_toTopOf="@+id/guideline4"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/im_drawer"
@@ -38,9 +26,9 @@
             android:layout_height="40dp"
             android:layout_marginStart="8dp"
             android:background="@drawable/img_avatar_border"
-            app:layout_constraintBottom_toTopOf="@+id/guideline4"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/top_view"
+            app:layout_constraintStart_toStartOf="@+id/top_view"
+            app:layout_constraintTop_toTopOf="@+id/top_view"
             app:srcCompat="@mipmap/app" />
 
         <include
@@ -48,6 +36,7 @@
             layout="@layout/content_master"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -76,8 +65,9 @@
             android:layout_height="40dp"
             android:layout_marginEnd="8dp"
             android:src="@mipmap/icon_message"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/im_drawer" />
+            app:layout_constraintBottom_toBottomOf="@+id/top_view"
+            app:layout_constraintEnd_toEndOf="@+id/top_view"
+            app:layout_constraintTop_toTopOf="@+id/top_view" />
 
         <TextView
             android:id="@+id/textView8"
@@ -142,4 +132,11 @@
             app:layout_constraintGuide_begin="20dp"
             app:layout_constraintGuide_percent="0.9" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/menu_master" />
 </androidx.drawerlayout.widget.DrawerLayout>

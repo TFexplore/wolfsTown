@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="login_top">#FFFFFF</color>
     <color name="top_cell">#2196f3</color>
+    <color name="top_person">#edf2ff</color>
 
     <color name="bar_main">#4dabf7</color>
 

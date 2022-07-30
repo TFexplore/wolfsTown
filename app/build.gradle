@@ -70,8 +70,9 @@ dependencies {
     implementation project(path: ':camerax')
     implementation project(path: ':editPage')
     implementation project(path: ':easyhttp')
-    implementation project(path: ':base')
-    implementation project(path: ':base')
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation project(path: ':library:base')
+    implementation project(path: ':library:base')
     testImplementation 'junit:junit:4.13.2'
 
 
@@ -95,4 +96,5 @@ dependencies {
 
     implementation 'org.greenrobot:eventbus:3.1.1'
     implementation 'com.getbase:floatingactionbutton:1.10.1'
+
 }

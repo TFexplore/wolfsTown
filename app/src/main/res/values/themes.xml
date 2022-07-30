@@ -49,6 +49,5 @@
         <item name="android:windowTranslucentNavigation">true</item>
         侵入状态栏
         -->
-
     </style>
 </resources>

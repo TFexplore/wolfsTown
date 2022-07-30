@@ -4,7 +4,7 @@
     android:id="@+id/header_bk"
     android:layout_width="match_parent"
     android:layout_height="200dp"
-    android:background="#e3f2fd"
+    android:background="#4263eb"
     android:gravity="bottom"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
@@ -14,23 +14,40 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/img_border"
         android:paddingTop="16dp"
-        android:src="@mipmap/icon_qq"/>
+        android:src="@mipmap/icon_qq" />
 
-    <TextView
-        android:id="@+id/name_header"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="16dp"
-        android:paddingLeft="5dp"
-        android:text="爱吃橘子"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@color/black"
-        android:textSize="18sp" />
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="爱吃橘子"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/color_white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="这个人什么也没有留下" />
+    </LinearLayout>
+
 </FrameLayout>
 

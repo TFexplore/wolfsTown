@@ -13,6 +13,10 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -76,8 +80,8 @@ public class MasterFragment extends Fragment {
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
-
-        MainActivity.setWindowStatusBarColor(getActivity(), getActivity().getResources().getColor(R.color.cell));
+        MainActivity.setWindowStatusBarColor(getActivity(), getResources().getColor(R.color.cell));//有效
+        //MainActivity.setWindowStatusBarColor(requireActivity(),R.color.cell);//无效
         binding = FragmentMasterBinding.inflate(inflater, container, false);
 
         return binding.getRoot();
@@ -86,6 +90,7 @@ public class MasterFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
         viewModel=new ViewModelProvider(this).get(MasterViewModel.class);
 
         clickInit();
@@ -94,6 +99,15 @@ public class MasterFragment extends Fragment {
         HeaderLayoutInit();
         pagerInit();
         useBanner();
+    }
+    //获取状态栏高度
+    public int getStatusBarHeight() {
+        int result = 0;
+        int resourceId = getResources().getIdentifier("status_bar_height", "dimen", "android");
+        if (resourceId > 0) {
+            result = getResources().getDimensionPixelSize(resourceId);
+        }
+        return result;
     }
 
     void clickInit(){
@@ -111,7 +125,13 @@ public class MasterFragment extends Fragment {
                 controller.navigate(R.id.enterFragment);
             }
         });
-
+        binding.content.imMine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavController controller= Navigation.findNavController(v);
+                controller.navigate(R.id.personFragment);
+            }
+        });
         //发帖按钮
         binding.floating.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -127,6 +147,7 @@ public class MasterFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 binding.drawerLayout.openDrawer(Gravity.LEFT);
+                Log.d(TAG, "onClick: open");
             }
         });
 
@@ -234,7 +255,7 @@ public class MasterFragment extends Fragment {
 
         }else {
             ToastUtils.showToast(requireContext(),"未登录，请先登录");
-            toLoginActivity();
+            //toLoginActivity();
         }
 
     }
@@ -242,6 +263,8 @@ public class MasterFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
+        Log.d(TAG, "onDestroyView: ----------");
+
         binding = null;
     }
     public void useBanner() {
@@ -268,6 +291,16 @@ public class MasterFragment extends Fragment {
     }
     void  HeaderLayoutInit(){
         View view=binding.navigationView.inflateHeaderView(R.layout.headerlayout);
+        ImageView imAvatar=(ImageView) view.findViewById(R.id.avatar);
+        imAvatar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(TAG, "onClick: im");
+                NavController controller= Navigation.findNavController(v);
+                controller.navigate(R.id.personFragment);
+            }
+        });
+
 
     }
     private void leftViewInit() {
@@ -276,6 +309,7 @@ public class MasterFragment extends Fragment {
         if (navigationMenuView != null) {
             navigationMenuView.setVerticalScrollBarEnabled(false);
         }
+
         // NavigationView 监听
 
         binding.navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -320,5 +354,6 @@ public class MasterFragment extends Fragment {
             }
         }, 500);
     }
+
 
 }

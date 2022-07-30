@@ -1,11 +1,16 @@
 package com.example.wolfstown.ac.base;
 
 import android.app.Application;
+import android.graphics.Rect;
 import android.net.ConnectivityManager;
 import android.net.Network;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
+import android.view.Window;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -14,18 +19,21 @@ import androidx.core.content.ContextCompat;
 
 import com.example.wolfstown.easyhttp.model.HttpServer;
 import com.example.wolfstown.easyhttp.model.RequestHandler;
+import com.hjq.base.action.KeyboardAction;
 import com.hjq.http.EasyConfig;
 import com.luck.picture.lib.utils.ToastUtils;
 import com.tencent.mmkv.MMKV;
 
 import okhttp3.OkHttpClient;
 
-public class BaseActivity extends AppCompatActivity {
+public class BaseActivity extends AppCompatActivity implements KeyboardAction {
+
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-       initSdk(this.getApplication());
+        initSdk(this.getApplication());
 
 
     }
@@ -56,6 +64,7 @@ public class BaseActivity extends AppCompatActivity {
             });
         }
     }
+
 
 
 

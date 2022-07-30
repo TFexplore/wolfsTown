@@ -67,6 +67,7 @@
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/drawable/img_avatar_border.xml" value="0.1505" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/drawable/img_border.xml" value="0.1505" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/drawable/radius_shape_number.xml" value="0.1505" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/drawable/shape_shdow.xml" value="0.105" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/drawable/table_selector.xml" value="0.1505" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/drawable/tablelayout_radius.xml" value="0.1505" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/layout/activity_main.xml" value="0.22826086956521738" />
@@ -74,11 +75,12 @@
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/layout/footer.xml" value="0.17889492753623187" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/layout/fragment_details.xml" value="0.23052536231884058" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/layout/fragment_first.xml" value="0.264" />
-        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/layout/fragment_master.xml" value="0.152" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/layout/fragment_master.xml" value="0.264" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/layout/fragment_persion.xml" value="0.4" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/layout/fragment_second.xml" value="0.22826086956521738" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/layout/fragment_table.xml" value="0.23052536231884058" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/layout/grid_item.xml" value="0.23052536231884058" />
-        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/layout/headerlayout.xml" value="0.17889492753623187" />
+        <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/layout/headerlayout.xml" value="0.264" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/master/layout/item_table.xml" value="0.17889492753623187" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/selector/layout/activity_main.xml" value="0.23052536231884058" />
         <entry key="..\:/AndroidProject/wolfsTown/app/src/main/res/layout/selector/layout/item_filter_image.xml" value="0.23052536231884058" />
@@ -102,6 +104,12 @@
         <entry key="..\:/AndroidProject/wolfsTown/editPage/src/main/res/drawable/ps_custom_checkbox_selector.xml" value="0.222" />
         <entry key="..\:/AndroidProject/wolfsTown/editPage/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/AndroidProject/wolfsTown/editPage/src/main/res/layout/gv_filter_image.xml" value="0.18931159420289856" />
+        <entry key="..\:/AndroidProject/wolfsTown/library/widget/src/main/res/drawable/input_delete_ic.xml" value="0.105" />
+        <entry key="..\:/AndroidProject/wolfsTown/library/widget/src/main/res/drawable/password_off_ic.xml" value="0.105" />
+        <entry key="..\:/AndroidProject/wolfsTown/library/widget/src/main/res/drawable/password_on_ic.xml" value="0.105" />
+        <entry key="..\:/AndroidProject/wolfsTown/library/widget/src/main/res/drawable/rating_star_fill_ic.xml" value="0.105" />
+        <entry key="..\:/AndroidProject/wolfsTown/library/widget/src/main/res/drawable/rating_star_half_ic.xml" value="0.105" />
+        <entry key="..\:/AndroidProject/wolfsTown/library/widget/src/main/res/drawable/rating_star_off_ic.xml" value="0.105" />
         <entry key="..\:/AndroidProject/wolfsTown/selector/src/main/res/layout/ps_activity_container.xml" value="0.1875" />
         <entry key="..\:/AndroidProject/wolfsTown/selector/src/main/res/layout/ps_alert_dialog.xml" value="0.1875" />
         <entry key="..\:/AndroidProject/wolfsTown/selector/src/main/res/layout/ps_audio_play_dialog.xml" value="0.1875" />

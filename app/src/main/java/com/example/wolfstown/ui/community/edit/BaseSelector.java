@@ -72,6 +72,8 @@ import top.zibin.luban.OnRenameListener;
 
 public class BaseSelector {
 
+    Integer selectionMode=2;//1单选。2多选
+
     static final String TAG = "selector";
     final Context context;
 
@@ -143,7 +145,13 @@ public class BaseSelector {
     public void setLauncherResult(ActivityResultLauncher<Intent> launcherResult) {
         this.launcherResult = launcherResult;
     }
+    public Integer getSelectionMode() {
+        return selectionMode;
+    }
 
+    public void setSelectionMode(Integer selectionMode) {
+        this.selectionMode = selectionMode;
+    }
 
 
 

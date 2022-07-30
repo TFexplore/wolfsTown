@@ -65,4 +65,9 @@
             android:id="@+id/action_configureFragment_to_cellFragment"
             app:destination="@id/cellFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/personFragment"
+        android:name="com.example.wolfstown.ui.PersonFragment"
+        android:label="fragment_persion"
+        tools:layout="@layout/fragment_persion" />
 </navigation>

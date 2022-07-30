@@ -5,10 +5,10 @@ import android.os.Build;
 import android.os.Bundle;
 
 import com.example.wolfstown.R;
+import com.example.wolfstown.ac.base.BaseActivity;
 import com.example.wolfstown.common.Utils;
 import com.example.wolfstown.databinding.ActivityMainBinding;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.util.Log;
 
@@ -18,9 +18,10 @@ import androidx.navigation.ui.NavigationUI;
 
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
 
     private ActivityMainBinding binding;
@@ -30,7 +31,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         binding = ActivityMainBinding.inflate(getLayoutInflater());
+        //getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         setContentView(binding.getRoot());
+
+
+
+
         navController = Navigation.findNavController(this, R.id.nav_master);
         NavigationUI.setupActionBarWithNavController(this, navController);
 

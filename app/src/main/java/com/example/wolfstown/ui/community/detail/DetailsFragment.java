@@ -19,6 +19,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.wolfstown.R;
+import com.example.wolfstown.ac.MainActivity;
 import com.example.wolfstown.databinding.FragmentDetailsBinding;
 import com.example.wolfstown.modle.Comment;
 import com.wanglu.photoviewerlibrary.OnLongClickListener;
@@ -43,11 +44,14 @@ public class DetailsFragment extends Fragment {
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
+        MainActivity.setWindowStatusBarColor(getActivity(), getActivity().getResources().getColor(R.color.cell));
         binding = FragmentDetailsBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+
         mDatas=new ArrayList<>();
         commentsInit();
         mGridView = binding.content.gridView;
